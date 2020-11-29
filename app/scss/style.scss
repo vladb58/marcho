@@ -160,6 +160,18 @@
   }
 }
 
+.top{
+  &__container{
+    max-width: 1700px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 120px 0 130px;
+    text-align: center;
+  }
+}
+
 .top-slider{
   background-color: $bg;
   background-image: url(../images/topslider-bg.png);
@@ -659,16 +671,56 @@
   }
 }
 
-.BG {
-  background-color: rgb(255, 255, 255);
-  
-  position: absolute;
-  left: 375px;
-  top: 5688px;
-  width: 370px;
-  height: 478px;
-  z-index: 115;
+.modal{
+  padding-top: 100px;
+  max-width: 570px;
+  margin: 0 auto 115px;
+  &__links{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__link{
+    font-size: 22px;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    color: #909090;
+    margin: 0 30px;
+  }
+  &__link--active{
+    color: $accent;
+  }
+  &__label{
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 4px;
+    height: 60px;
+    padding: 0 15px;
+  }
+  &__btn{
+    margin-top: 15px;
+    display: block;
+    background-color: $title;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    padding: 14px 0;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  &__error{
+    margin-top: 12px;
+    color: $accent;
+    display: inline-block;
+  }
 }
+
 
 
 @import 'media';
