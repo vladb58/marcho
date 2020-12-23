@@ -125,7 +125,11 @@
   &__text{
     margin-bottom: 25px;
   }
+  &__form{
+    display: flex;
+  }
   &__form-input{
+    margin-right: 3px;
     background-color: #fff;
     max-width: 320px;
     width: 100%;
